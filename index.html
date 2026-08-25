@@ -1,20 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Process Guy - Pixel Test</title>
-</head>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "2390829157992481");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=2390829157992481&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
 
-<body>
-
+  <body>
     <h1>The Process Guy</h1>
 
-    <p>
-        Helping businesses build systems that save time and make more money.
-    </p>
+    <p>Helping businesses build systems that save time and make more money.</p>
 
-    <hr>
+    <hr />
 
     <h2>Our Services</h2>
 
@@ -23,45 +56,26 @@
     <p>Automation</p>
     <p>Lead Tracking</p>
 
-    <button id="contentButton">
-        View Business Process Guide
-    </button>
+    <button id="contentButton">View Business Process Guide</button>
 
-    <br><br>
+    <br /><br />
 
-    <button id="contactButton">
-        Contact The Process Guy
-    </button>
+    <button id="contactButton">Contact The Process Guy</button>
 
     <h2>Free Guide</h2>
 
-    <p>
-        Learn the 5 processes every small business should systemize.
-    </p>
+    <p>Learn the 5 processes every small business should systemize.</p>
 
     <form id="leadForm">
+      <input type="text" placeholder="Your Name" required />
 
-        <input
-            type="text"
-            placeholder="Your Name"
-            required
-        >
+      <br /><br />
 
-        <br><br>
+      <input type="email" placeholder="Your Email" required />
 
-        <input
-            type="email"
-            placeholder="Your Email"
-            required
-        >
+      <br /><br />
 
-        <br><br>
-
-        <button type="submit">
-            Get Free Guide
-        </button>
-
+      <button type="submit">Get Free Guide</button>
     </form>
-
-</body>
+  </body>
 </html>
